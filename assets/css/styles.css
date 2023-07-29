@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+:root {
+    --primary-color: #2e80ce;
+}
+
 html {
     font-size: 62.5%;
 }
@@ -38,16 +42,55 @@ button {
     display: inline-block;
     height: 60px;
     border-radius: 30px;
-    background: #2e80ce;
+    background: var(--primary-color);
     color: #fff;
     text-align: center;
     font-size: 1.8rem;
-    line-height: 60px; /* 166.667% */
+    line-height: 6rem;
 }
 
 .btn:hover {
     opacity: 0.8;
     transition: 0.2s;
+}
+
+.truncate {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.word-break {
+    word-break: break-word;
+}
+
+/* control buttons  */
+.control-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 0 18px;
+    width: 90px;
+}
+
+.control-buttons__circle {
+    height: 36px;
+    width: 36px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 1px solid #575f66;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.control-buttons__circle:hover {
+    border-color: var(--primary-color);
+    background-color: var(--primary-color);
+}
+
+.control-buttons__circle:hover svg path {
+    stroke: #ffffff;
 }
 
 /* !=============== selectors =============== */
@@ -208,10 +251,10 @@ button {
     font-size: 5rem;
     font-weight: 600;
     letter-spacing: -0.1rem;
+    margin-bottom: 18px;
 }
 
 .services__desc {
-    margin-top: 18px;
     margin: auto;
     width: 468px;
     color: #575f66;
@@ -250,17 +293,17 @@ button {
 
 .services__item:hover {
     box-shadow: 0px 14px 28px 0px rgba(0, 0, 0, 0.05);
-    transition: 0.2s;
+    transition: 0.6s;
 }
 
 .services__item:hover .circle {
-    background-color: #2e80ce;
-    transition: 0.2s;
+    background-color: var(--primary-color);
+    transition: 0.6s;
 }
 
 .services__item:hover .circle svg path {
     fill: #fff;
-    transition: 0.2s;
+    transition: 0.6s;
 }
 
 .services__item .circle {
@@ -294,4 +337,574 @@ button {
     width: 205px;
 }
 
-/* !=============== Services section =============== */
+/* !=============== how it works section =============== */
+.how-it-works {
+    margin-top: 70px;
+    padding: 100px 0;
+    background: #f6fbff;
+}
+
+.how-it-works__heading {
+    color: #10375c;
+    font-size: 5rem;
+    font-weight: 600;
+    letter-spacing: -0.1rem;
+}
+
+.how-it-works__desc {
+    margin-top: 18px;
+    width: 468px;
+    color: #575f66;
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 1.67; /* 166.667% */
+}
+
+.how-it-works__list {
+    margin-top: 70px;
+    height: 418px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.how-it-works__item {
+    height: 402px;
+    width: calc((100% - 60px) / 3);
+    padding: 43px 42px 43px 42px;
+    border: 16px solid #eaf6ff;
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+.how-it-works__item + .how-it-works__item {
+    margin-left: 30px;
+}
+
+.how-it-works__item:hover {
+    margin-bottom: 16px;
+    border-color: var(--primary-color);
+    transition: 0.5s;
+}
+
+.how-it-works__item:hover .how-it-works__cta {
+    color: var(--primary-color);
+    font-weight: 400;
+}
+
+.how-it-works__title {
+    margin-top: 18px;
+    color: #10375c;
+    font-size: 2.6rem;
+    font-weight: 600;
+}
+
+.how-it-works__item__desc {
+    margin-top: 28px;
+    color: #575f66;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 1.75;
+}
+
+.how-it-works__cta {
+    margin-top: 18px;
+    display: block;
+    color: #575f66;
+    font-size: 1.6rem;
+    font-weight: 300;
+}
+
+/* !=============== dentures section =============== */
+.dentures {
+    margin-top: 70px;
+    padding: 100px 0;
+}
+
+.dentures__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dentures__img-block {
+    width: 48.7%;
+    height: 491px;
+    position: relative;
+}
+
+.dentures__image:first-child {
+    width: 512px;
+    height: 370px;
+    object-fit: cover;
+    border-radius: 6px;
+    box-shadow: 0px 14px 28px 0px rgba(0, 0, 0, 0.07);
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.dentures__image:last-child {
+    width: 332px;
+    height: 370px;
+    object-fit: cover;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    bottom: 0;
+}
+
+/* text-block  */
+.dentures__text-block {
+    width: 470px;
+    /* padding-left: 130px; */
+}
+
+.dentures__title {
+    color: #10375c;
+    font-size: 5rem;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -0.1rem;
+}
+
+.dentures__desc {
+    margin-top: 18px;
+    color: #575f66;
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 1.67;
+}
+
+.dentures__btn {
+    margin-top: 38px;
+    width: 205px;
+}
+
+/* !=============== dentists section =============== */
+.dentists {
+    margin-top: 70px;
+    padding: 100px 0;
+}
+
+.dentists__heading {
+    color: #10375c;
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 600;
+    letter-spacing: -0.1rem;
+    margin-bottom: 39px;
+}
+
+.dentists__btn {
+    width: 205px;
+    display: block;
+    margin: auto;
+}
+
+.dentists__list {
+    margin-top: 70px;
+    display: flex;
+    overflow: hidden;
+}
+
+.dentists__item {
+    flex-shrink: 0;
+    width: calc((100% - 90px) / 4);
+    border-radius: 6px;
+}
+
+.dentists__item + .dentists__item {
+    margin-left: 30px;
+}
+
+.dentists__img {
+    width: 100%;
+    height: 318px;
+    border-radius: 6px;
+    background: #eaf6ff;
+    object-fit: cover;
+}
+
+.dentists__info {
+    padding: 12px 10px 0;
+}
+
+.dentists__name a {
+    margin-top: 12px;
+    display: block;
+    color: #10375c;
+    text-align: center;
+    font-size: 1.6rem;
+    line-height: 1.75;
+}
+
+.dentists__address {
+    color: #575f66;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 1.86;
+}
+
+/* chevron control buttons  */
+.dentists__chevron {
+    padding-top: 38px;
+    margin: auto;
+}
+
+/* !=============== mobile app section =============== */
+.mobile-app {
+    margin-top: 70px;
+}
+
+.mobile-app__container {
+    /* to cope with margin collapse */
+    display: flex;
+    flex-direction: column;
+}
+
+.mobile-app__body {
+    width: 100%; /* to compel with margin collapse */
+    margin-top: 95px;
+    border-radius: 4px;
+    background: var(--primary-color);
+    padding: 76px 0;
+    position: relative;
+}
+
+.mobile-app__img {
+    position: absolute;
+    bottom: 0;
+    left: 6%;
+}
+
+.mobile-app__img img {
+    display: block;
+}
+
+.mobile-app__text {
+    width: 56.1%;
+    margin-left: auto;
+}
+
+.mobile-app__title {
+    width: 489px;
+    color: #fff;
+    font-size: 5rem;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -0.1rem;
+}
+
+.mobile-app__desc {
+    margin-top: 18px;
+    width: 586px;
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 1.67;
+}
+
+.mobile-app__download {
+    margin-top: 38px;
+    display: flex;
+    gap: 0 28px;
+}
+
+/* !=============== blog section =============== */
+.blog {
+    margin-top: 70px;
+    padding: 100px 0;
+}
+
+.blog__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.blog__left-part {
+    width: 40.2%;
+}
+
+.blog__title {
+    color: #10375c;
+    font-size: 5rem;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -0.1rem;
+}
+
+.blog__cta {
+    display: block;
+    margin: 28px 0;
+    color: #10375c;
+    font-family: "Inter";
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration-line: underline;
+}
+
+/* blog list  */
+.blog__list {
+    width: 49%;
+    display: flex;
+    overflow: hidden;
+}
+
+.blog__item {
+    flex-shrink: 0;
+    width: calc((100% - 30px) / 2);
+    border-radius: 12px;
+}
+
+.blog__item + .blog__item {
+    margin-left: 30px;
+}
+
+.blog__item:hover {
+    outline: 1px solid #e8ebee;
+}
+
+.blog__item:hover .blog__item-cta {
+    color: #10375c;
+}
+
+.blog__img {
+    width: calc(100% + 2px);
+    margin-left: -1px;
+    margin-top: -1px;
+    height: 172px;
+    object-fit: cover;
+    border-radius: 12px 12px 0px 0px;
+
+    position: relative;
+    z-index: 1;
+}
+
+.blog__info {
+    padding: 18px 22px 21px;
+}
+
+.blog__item-title a {
+    color: #10375c;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.63; /* 162.5% */
+}
+
+.blog__item-desc {
+    margin-top: 10px;
+    color: #575f66;
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 1.72; /* 171.429% */
+}
+
+.blog__item-cta {
+    display: block;
+    margin-top: 12px;
+    color: var(--primary-color);
+    font-size: 1.4rem;
+}
+
+/* !=============== appointment section =============== */
+.appointment {
+    margin-top: 70px;
+    padding: 100px 0;
+    background: #f6fbff;
+}
+
+.appointment__title {
+    color: #10375c;
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -0.1rem;
+    padding-bottom: 20px;
+    margin-bottom: 18px;
+    position: relative;
+}
+
+.appointment__title::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 136px;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--primary-color);
+}
+
+.appointment__desc {
+    margin: auto;
+    width: 617px;
+    color: #575f66;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 1.75; /* 175% */
+    padding-bottom: 38px;
+}
+
+.appointment__btn {
+    display: block;
+    margin: auto;
+    width: 205px;
+}
+
+/* !=============== footer section =============== */
+.footer {
+    margin-top: 170px;
+    padding: 100px 0 42px;
+    background: #10375c;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 28px;
+    border-bottom: 1px solid #406181;
+}
+
+/* left part  */
+.footer__left-part {
+    width: 28.7%;
+}
+
+.footer__desc {
+    margin-top: 22px;
+    color: #a9b3bb;
+    font-family: "Open Sans";
+    font-size: 1.6rem;
+    line-height: 1.75; /* 175% */
+}
+
+/* column wrapper  */
+.footer__column-wrapper {
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__column-title {
+    color: #fff;
+    font-family: "Open Sans";
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.75; /* 175% */
+    margin-bottom: 10px;
+}
+
+.footer__column-title ~ .footer__column-title {
+    margin-top: 28px;
+}
+
+.footer__list {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__item {
+    margin-top: 10px;
+}
+
+.footer__link {
+    color: #a9b3bb;
+    font-family: "Open Sans";
+    font-size: 1.4rem;
+    line-height: 1.86; /* 185.714% */
+}
+
+.social-apps-row {
+    padding-top: 10px;
+    display: flex;
+    gap: 0 20px;
+}
+
+.footer__circle {
+    display: block;
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer__circle:hover {
+    background-color: var(--primary-color);
+    transition: 0.2s;
+}
+
+.footer__circle:hover svg path {
+    fill: #fff;
+    transition: 0.2s;
+}
+
+.footer__column p.footer__item {
+    margin-top: 20px;
+    width: 273px;
+}
+
+/* footer input and subscribe row */
+.footer__input {
+    padding: 10px;
+    width: 212px;
+    height: 46px;
+    border-radius: 4px;
+    border: 1px solid #406181;
+    background-color: transparent;
+    font-family: "Open Sans";
+    font-size: 1.4rem;
+    line-height: 1.85;
+}
+
+::placeholder {
+    color: #9ca8b1;
+}
+
+.footer__btn {
+    margin-left: 10px;
+    width: 108px;
+    height: 46px;
+    border-radius: 4px;
+    background: var(--primary-color);
+    color: #fff;
+    font-family: "Open Sans";
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 4.6rem;
+}
+
+.footer__copyright {
+    margin-top: 28px;
+    color: #aab3ba;
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: 1.4rem;
+    line-height: 1.86;
+}
+
+/* Customize the scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #b1b1b1;
+    border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #929292;
+}

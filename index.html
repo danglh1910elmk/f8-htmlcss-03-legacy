@@ -80,10 +80,21 @@
             content="./assets/favicon/ms-icon-144x144.png"
         />
         <meta name="theme-color" content="#ffffff" />
-        <!-- embedded font -->
+
+        <!-- embed font -->
         <link rel="stylesheet" href="./assets/fonts/stylesheet.css" />
+
+        <!-- embed Inter font  -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap"
+            rel="stylesheet"
+        />
+
         <!-- reset css  -->
         <link rel="stylesheet" href="./assets/css/reset.css" />
+
         <!-- styles.css  -->
         <link rel="stylesheet" href="./assets/css/styles.css" />
         <title>Shine Smile</title>
@@ -135,7 +146,9 @@
                     </p>
                     <div class="hero__last-row">
                         <button class="hero__btn btn">Book Online</button>
-                        <p class="hero__phone-number">or call (123) 456-7890</p>
+                        <a href="tel:1234567890" class="hero__phone-number"
+                            >or call (123) 456-7890</a
+                        >
                     </div>
                 </div>
                 <!-- image block  -->
@@ -268,6 +281,712 @@
             </div>
         </section>
 
-        <!-- new section  -->
+        <!-- how it works section  -->
+        <section class="how-it-works">
+            <div class="container">
+                <section class="how-it-works__header">
+                    <h2 class="how-it-works__heading">How it works</h2>
+                    <p class="how-it-works__desc">
+                        Exceptional dental care for all ages. Your great smile
+                        begins with a great dentist.
+                    </p>
+                </section>
+                <section class="how-it-works__list">
+                    <!-- item 1 -->
+                    <section class="how-it-works__item">
+                        <img
+                            src="./assets/icons/how-it-works-icon-1.svg"
+                            alt="Search doctor"
+                            class="how-it-works__img"
+                        />
+                        <h3 class="how-it-works__title">Search doctor</h3>
+                        <p
+                            class="how-it-works__item__desc truncate"
+                            style="-webkit-line-clamp: 3"
+                        >
+                            Search a doctor by education, qualifications or
+                            experience-contact for inquiry. Lorem, ipsum dolor.
+                        </p>
+                        <a href="#!" class="how-it-works__cta">Learn More</a>
+                    </section>
+
+                    <!-- item 2 -->
+                    <section class="how-it-works__item">
+                        <img
+                            src="./assets/icons/how-it-works-icon-2.svg"
+                            alt="Find best doctor"
+                            class="how-it-works__img"
+                        />
+                        <h3 class="how-it-works__title">Find best doctor</h3>
+                        <p
+                            class="how-it-works__item__desc truncate"
+                            style="-webkit-line-clamp: 3"
+                        >
+                            Search a doctor by education, qualifications or
+                            experience-contact for inquiry.
+                        </p>
+                        <a href="#!" class="how-it-works__cta">Learn More</a>
+                    </section>
+
+                    <!-- item 3 -->
+                    <section class="how-it-works__item">
+                        <img
+                            src="./assets/icons/how-it-works-icon-3.svg"
+                            alt="Get treatment"
+                            class="how-it-works__img"
+                        />
+                        <h3 class="how-it-works__title">Get treatment</h3>
+                        <p
+                            class="how-it-works__item__desc truncate"
+                            style="-webkit-line-clamp: 3"
+                        >
+                            Search a doctor by education, qualifications or
+                            experience-contact for inquiry.
+                        </p>
+                        <a href="#!" class="how-it-works__cta">Learn More</a>
+                    </section>
+                </section>
+            </div>
+        </section>
+
+        <!-- dentures section -->
+        <section class="dentures">
+            <div class="dentures__container container">
+                <!-- left part -->
+                <figure class="dentures__img-block">
+                    <img
+                        src="./assets/imgs/dentures-1.jpg"
+                        alt="dentures"
+                        class="dentures__image"
+                    />
+                    <img
+                        src="./assets/imgs/dentures-2.jpg"
+                        alt="dentures"
+                        class="dentures__image"
+                    />
+                </figure>
+
+                <!-- right part -->
+                <section class="dentures__text-block">
+                    <h2 class="dentures__title">
+                        Take back your smile with shine.
+                    </h2>
+                    <p class="dentures__desc">
+                        If you’re missing multiple teeth due to decay, injury,
+                        or the natural aging process, dentures might be the
+                        perfect solution.
+                    </p>
+                    <a href="#!" class="dentures__btn btn">Learn More</a>
+                </section>
+            </div>
+        </section>
+
+        <!-- dentists section  -->
+        <section class="dentists">
+            <div class="dentists__container container">
+                <section class="dentists__header">
+                    <h2 class="dentists__heading">Our virtual dentists</h2>
+                    <a href="#!" class="dentists__btn btn">Meet our dentists</a>
+                </section>
+                <section class="dentists__list">
+                    <!-- dentist 1 -->
+                    <section class="dentists__item">
+                        <a href="#!">
+                            <img
+                                src="./assets/imgs/dentists-1.png"
+                                alt="dentist"
+                                class="dentists__img"
+                            />
+                        </a>
+                        <section class="dentists__info">
+                            <h3
+                                class="dentists__name truncate"
+                                style="-webkit-line-clamp: 1"
+                            >
+                                <a href="#!">Dr. John Doe</a>
+                            </h3>
+                            <p
+                                class="dentists__address truncate word-break"
+                                style="-webkit-line-clamp: 2"
+                            >
+                                DDS, California - Linda University
+                            </p>
+                        </section>
+                    </section>
+
+                    <!-- dentist 2 -->
+                    <section class="dentists__item">
+                        <a href="#!">
+                            <img
+                                src="./assets/imgs/dentists-2.png"
+                                alt="dentist"
+                                class="dentists__img"
+                            />
+                        </a>
+                        <section class="dentists__info">
+                            <h3
+                                class="dentists__name truncate"
+                                style="-webkit-line-clamp: 1"
+                            >
+                                <a href="#!">Dr. Jane Ross</a>
+                            </h3>
+                            <p
+                                class="dentists__address truncate word-break"
+                                style="-webkit-line-clamp: 2"
+                            >
+                                DDS, California - Linda University
+                            </p>
+                        </section>
+                    </section>
+
+                    <!-- dentist 3 -->
+                    <section class="dentists__item">
+                        <a href="#!">
+                            <img
+                                src="./assets/imgs/dentists-3.png"
+                                alt="dentist"
+                                class="dentists__img"
+                            />
+                        </a>
+                        <section class="dentists__info">
+                            <h3
+                                class="dentists__name truncate"
+                                style="-webkit-line-clamp: 1"
+                            >
+                                <a href="#!">Dr. Biden Joe</a>
+                            </h3>
+                            <p
+                                class="dentists__address truncate word-break"
+                                style="-webkit-line-clamp: 2"
+                            >
+                                DDS, California - Linda University
+                            </p>
+                        </section>
+                    </section>
+
+                    <!-- dentist 4 -->
+                    <section class="dentists__item">
+                        <a href="#!">
+                            <img
+                                src="./assets/imgs/dentists-4.png"
+                                alt="dentist"
+                                class="dentists__img"
+                            />
+                        </a>
+                        <section class="dentists__info">
+                            <h3
+                                class="dentists__name truncate"
+                                style="-webkit-line-clamp: 1"
+                            >
+                                <a href="#!">Dr. John Dude</a>
+                            </h3>
+                            <p
+                                class="dentists__address truncate word-break"
+                                style="-webkit-line-clamp: 2"
+                            >
+                                DDS, California - Linda University
+                            </p>
+                        </section>
+                    </section>
+
+                    <!-- dentist 5 -->
+                    <section class="dentists__item">
+                        <a href="#!">
+                            <img
+                                src="./assets/imgs/dentists-5.png"
+                                alt="dentist"
+                                class="dentists__img"
+                            />
+                        </a>
+                        <section class="dentists__info">
+                            <h3
+                                class="dentists__name truncate"
+                                style="-webkit-line-clamp: 1"
+                            >
+                                <a href="#!">Dr. John Dude</a>
+                            </h3>
+                            <p
+                                class="dentists__address truncate word-break"
+                                style="-webkit-line-clamp: 2"
+                            >
+                                DDS, California - Linda University
+                            </p>
+                        </section>
+                    </section>
+
+                    <!-- dentist 6 -->
+                    <section class="dentists__item">
+                        <a href="#!">
+                            <img
+                                src="./assets/imgs/dentists-6.png"
+                                alt="dentist"
+                                class="dentists__img"
+                            />
+                        </a>
+                        <section class="dentists__info">
+                            <h3
+                                class="dentists__name truncate"
+                                style="-webkit-line-clamp: 1"
+                            >
+                                <a href="#!">Dr. John Dude</a>
+                            </h3>
+                            <p
+                                class="dentists__address truncate word-break"
+                                style="-webkit-line-clamp: 2"
+                            >
+                                DDS, California - Linda University
+                            </p>
+                        </section>
+                    </section>
+
+                    <!-- dentist 7 -->
+                    <section class="dentists__item">
+                        <a href="#!">
+                            <img
+                                src="./assets/imgs/dentists-7.png"
+                                alt="dentist"
+                                class="dentists__img"
+                            />
+                        </a>
+                        <section class="dentists__info">
+                            <h3
+                                class="dentists__name truncate"
+                                style="-webkit-line-clamp: 1"
+                            >
+                                <a href="#!">Dr. John Dude</a>
+                            </h3>
+                            <p
+                                class="dentists__address truncate word-break"
+                                style="-webkit-line-clamp: 2"
+                            >
+                                DDS, California - Linda University
+                            </p>
+                        </section>
+                    </section>
+
+                    <!-- dentist 8 -->
+                    <section class="dentists__item">
+                        <a href="#!">
+                            <img
+                                src="./assets/imgs/dentists-3.png"
+                                alt="dentist"
+                                class="dentists__img"
+                            />
+                        </a>
+                        <section class="dentists__info">
+                            <h3
+                                class="dentists__name truncate"
+                                style="-webkit-line-clamp: 1"
+                            >
+                                <a href="#!">Dr. John Dude</a>
+                            </h3>
+                            <p
+                                class="dentists__address truncate word-break"
+                                style="-webkit-line-clamp: 2"
+                            >
+                                DDS, California - Linda University
+                            </p>
+                        </section>
+                    </section>
+                </section>
+
+                <!-- control buttons  -->
+                <div class="dentists__chevron control-buttons">
+                    <!-- chevron left -->
+                    <div class="control-buttons__circle">
+                        <svg
+                            width="6"
+                            height="12"
+                            viewBox="0 0 6 12"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                d="M5.5 1L0.5 6L5.5 11"
+                                stroke="#575F66"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            />
+                        </svg>
+                    </div>
+
+                    <!-- chevron right  -->
+                    <div class="control-buttons__circle">
+                        <svg
+                            width="6"
+                            height="12"
+                            viewBox="0 0 6 12"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                d="M0.5 1L5.5 6L0.5 11"
+                                stroke="#575F66"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- mobile-app section  -->
+        <section class="mobile-app">
+            <div class="mobile-app__container container">
+                <!-- mobile-app__body: the blue section -->
+                <section class="mobile-app__body">
+                    <figure class="mobile-app__img">
+                        <img src="./assets/imgs/phone.svg" alt="phone" />
+                    </figure>
+
+                    <!-- the element that encloses the text and download icon -->
+                    <section class="mobile-app__text">
+                        <h2 class="mobile-app__title">
+                            Take back your smile with dentures
+                        </h2>
+                        <p class="mobile-app__desc">
+                            If you’re missing multiple teeth due to decay,
+                            injury, or the natural aging process, dentures might
+                            be the perfect solution.
+                        </p>
+                        <div class="mobile-app__download">
+                            <a href="#!">
+                                <img
+                                    src="./assets/icons/google-play.svg"
+                                    alt="google play"
+                                />
+                            </a>
+                            <a href="#!">
+                                <img
+                                    src="./assets/icons/app-store.svg"
+                                    alt="app store"
+                                />
+                            </a>
+                        </div>
+                    </section>
+                </section>
+            </div>
+        </section>
+
+        <!-- blog section  -->
+        <section class="blog">
+            <div class="blog__container container">
+                <section class="blog__left-part">
+                    <h2 class="blog__title">Read Latest News & Events.</h2>
+                    <a href="#!" class="blog__cta">Read All Blog</a>
+                    <div class="blog__chevron control-buttons">
+                        <!-- chevron left -->
+                        <div class="control-buttons__circle">
+                            <svg
+                                width="6"
+                                height="12"
+                                viewBox="0 0 6 12"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M5.5 1L0.5 6L5.5 11"
+                                    stroke="#575F66"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </svg>
+                        </div>
+
+                        <!-- chevron right  -->
+                        <div class="control-buttons__circle">
+                            <svg
+                                width="6"
+                                height="12"
+                                viewBox="0 0 6 12"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M0.5 1L5.5 6L0.5 11"
+                                    stroke="#575F66"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </svg>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="blog__list">
+                    <!-- item 1 -->
+                    <section class="blog__item">
+                        <a href="#!"
+                            ><img
+                                src="./assets/imgs/blog-1.jpg"
+                                alt="Key Considerations for Regulatory Compliant"
+                                class="blog__img"
+                        /></a>
+                        <section class="blog__info">
+                            <h3 class="blog__item-title">
+                                <a
+                                    href="#!"
+                                    class="truncate"
+                                    style="-webkit-line-clamp: 2"
+                                    >Key Considerations for Regulatory
+                                    Compliant.</a
+                                >
+                            </h3>
+                            <p
+                                class="blog__item-desc truncate"
+                                style="-webkit-line-clamp: 3"
+                            >
+                                It’s easy to think about medical care from a
+                                narrow perspective. You go to the hospital.
+                            </p>
+                            <a href="#!" class="blog__item-cta">Learn More</a>
+                        </section>
+                    </section>
+
+                    <!-- item 2 -->
+                    <section class="blog__item">
+                        <a href="#!"
+                            ><img
+                                src="./assets/imgs/blog-2.jpg"
+                                alt="What Is Population Health Management?"
+                                class="blog__img"
+                        /></a>
+                        <section class="blog__info">
+                            <h3 class="blog__item-title">
+                                <a
+                                    href="#!"
+                                    class="truncate"
+                                    style="-webkit-line-clamp: 2"
+                                    >What Is Population Health Management?</a
+                                >
+                            </h3>
+                            <p
+                                class="blog__item-desc truncate"
+                                style="-webkit-line-clamp: 3"
+                            >
+                                It’s easy to think about medical care from a
+                                narrow perspective. You go to the hospital.
+                            </p>
+                            <a href="#!" class="blog__item-cta">Learn More</a>
+                        </section>
+                    </section>
+
+                    <!-- item 3 -->
+                    <section class="blog__item">
+                        <a href="#!"
+                            ><img
+                                src="./assets/imgs/blog-3.jpg"
+                                alt="What Is Population Health Management?"
+                                class="blog__img"
+                        /></a>
+                        <section class="blog__info">
+                            <h3 class="blog__item-title">
+                                <a
+                                    href="#!"
+                                    class="truncate"
+                                    style="-webkit-line-clamp: 2"
+                                    >What Is Population Health Management?</a
+                                >
+                            </h3>
+                            <p
+                                class="blog__item-desc truncate"
+                                style="-webkit-line-clamp: 3"
+                            >
+                                It’s easy to think about medical care from a
+                                narrow perspective. You go to the hospital.
+                            </p>
+                            <a href="#!" class="blog__item-cta">Learn More</a>
+                        </section>
+                    </section>
+
+                    <!-- item 4 -->
+                    <section class="blog__item">
+                        <a href="#!"
+                            ><img
+                                src="./assets/imgs/blog-4.jpg"
+                                alt="What Is Population Health Management?"
+                                class="blog__img"
+                        /></a>
+                        <section class="blog__info">
+                            <h3 class="blog__item-title">
+                                <a
+                                    href="#!"
+                                    class="truncate"
+                                    style="-webkit-line-clamp: 2"
+                                    >What Is Population Health Management?</a
+                                >
+                            </h3>
+                            <p
+                                class="blog__item-desc truncate"
+                                style="-webkit-line-clamp: 3"
+                            >
+                                It’s easy to think about medical care from a
+                                narrow perspective. You go to the hospital.
+                            </p>
+                            <a href="#!" class="blog__item-cta">Learn More</a>
+                        </section>
+                    </section>
+                </section>
+            </div>
+        </section>
+
+        <!-- appointment section -->
+        <section class="appointment">
+            <div class="appointment__container container">
+                <h2 class="appointment__title">
+                    Always welcoming new patients
+                </h2>
+                <p class="appointment__desc">
+                    Take control of your dental health and get the personalized
+                    care you deserve. Call (541) 772-8846 to schedule
+                </p>
+                <button class="appointment__btn btn">Appointment</button>
+            </div>
+        </section>
+
+        <!-- footer section -->
+        <footer class="footer">
+            <div class="footer__container container">
+                <div class="footer__left-part">
+                    <a href="#">
+                        <img src="./assets/imgs/logo.svg" alt="shine smile" />
+                    </a>
+                    <p class="footer__desc">
+                        Exceptional dental care for all ages. Your great smile
+                        begins with a great dentist.
+                    </p>
+                </div>
+                <div class="footer__column-wrapper">
+                    <!-- column 1 -->
+                    <section class="footer__column">
+                        <h3 class="footer__column-title">Home</h3>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="#!" class="footer__link"
+                                    >Lorem ipsum</a
+                                >
+                            </li>
+                            <li class="footer__item">
+                                <a href="#!" class="footer__link"
+                                    >Dolor sit amet</a
+                                >
+                            </li>
+                        </ul>
+
+                        <h3 class="footer__column-title">Support</h3>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="#!" class="footer__link"
+                                    >Help center</a
+                                >
+                            </li>
+                            <li class="footer__item">
+                                <a href="#!" class="footer__link"
+                                    >Account information</a
+                                >
+                            </li>
+                            <li class="footer__item">
+                                <a href="#!" class="footer__link">About</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#!" class="footer__link">Contact us</a>
+                            </li>
+                        </ul>
+                    </section>
+
+                    <!-- column 2 -->
+                    <section class="footer__column">
+                        <h3 class="footer__column-title">Services</h3>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="#!" class="footer__link">Dentures</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#!" class="footer__link"
+                                    >Account information</a
+                                >
+                            </li>
+                        </ul>
+
+                        <h3 class="footer__column-title">Doctors</h3>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="#!" class="footer__link"
+                                    >Shine smile</a
+                                >
+                            </li>
+                        </ul>
+                    </section>
+
+                    <!-- column 3 -->
+                    <section class="footer__column">
+                        <h3 class="footer__column-title">Stay In Touch</h3>
+                        <div class="social-apps-row">
+                            <a href="#!" class="footer__circle">
+                                <svg
+                                    width="6"
+                                    height="12"
+                                    viewBox="0 0 6 12"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M3.98981 11.9358V6.0302H5.76473L6 3.9517H3.98981L3.9928 2.91132C3.9928 2.3692 4.0477 2.07885 4.87783 2.07885H5.98755V0H4.21224C2.07977 0 1.32931 1.00825 1.32931 2.70405V3.95186H0V6.03055H1.32931V11.8521C1.84718 11.9489 2.38257 12 2.93075 12C3.28487 12 3.63863 11.9786 3.98981 11.9358Z"
+                                        fill="#2E80CE"
+                                    />
+                                </svg>
+                            </a>
+                            <a href="#!" class="footer__circle">
+                                <svg
+                                    width="16"
+                                    height="12"
+                                    viewBox="0 0 16 12"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M16 1.42062C15.405 1.66154 14.771 1.82123 14.11 1.89877C14.79 1.524 15.309 0.935077 15.553 0.225231C14.919 0.574154 14.219 0.820615 13.473 0.958154C12.871 0.366462 12.013 0 11.077 0C9.261 0 7.799 1.36062 7.799 3.02862C7.799 3.26862 7.821 3.49938 7.875 3.71908C5.148 3.59631 2.735 2.38985 1.114 0.552C0.831 1.00523 0.665 1.524 0.665 2.08246C0.665 3.13108 1.25 4.06062 2.122 4.59877C1.595 4.58954 1.078 4.44831 0.64 4.22585C0.64 4.23508 0.64 4.24708 0.64 4.25908C0.64 5.73046 1.777 6.95262 3.268 7.23415C3.001 7.30154 2.71 7.33385 2.408 7.33385C2.198 7.33385 1.986 7.32277 1.787 7.28215C2.212 8.48123 3.418 9.36277 4.852 9.39138C3.736 10.1972 2.319 10.6828 0.785 10.6828C0.516 10.6828 0.258 10.6717 0 10.6412C1.453 11.5062 3.175 12 5.032 12C11.068 12 14.368 7.38462 14.368 3.384C14.368 3.25015 14.363 3.12092 14.356 2.99262C15.007 2.56615 15.554 2.03354 16 1.42062Z"
+                                        fill="#2E80CE"
+                                    />
+                                </svg>
+                            </a>
+                            <a href="#!" class="footer__circle">
+                                <svg
+                                    width="13"
+                                    height="12"
+                                    viewBox="0 0 13 12"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M0 1.39394C0 0.989891 0.146401 0.656558 0.439189 0.393939C0.731978 0.131309 1.11262 0 1.58108 0C2.04119 0 2.41344 0.129285 2.69788 0.387879C2.99066 0.654545 3.13707 1.00201 3.13707 1.4303C3.13707 1.81818 2.99486 2.14141 2.71042 2.4C2.41764 2.66667 2.03282 2.8 1.55598 2.8H1.54344C1.08333 2.8 0.711072 2.66667 0.426641 2.4C0.142209 2.13333 0 1.79798 0 1.39394ZM0.163127 12V3.90303H2.94884V12H0.163127ZM4.49228 12H7.27799V7.47879C7.27799 7.19595 7.31146 6.97777 7.37838 6.82424C7.49549 6.54949 7.67326 6.31716 7.91168 6.12727C8.1501 5.93737 8.44916 5.84242 8.80888 5.84242C9.74582 5.84242 10.2143 6.45252 10.2143 7.67273V12H13V7.35758C13 6.16161 12.7072 5.25455 12.1216 4.63636C11.536 4.01818 10.7622 3.70909 9.80019 3.70909C8.72104 3.70909 7.88031 4.15758 7.27799 5.05455V5.07879H7.26544L7.27799 5.05455V3.90303H4.49228C4.509 4.16161 4.51737 4.96565 4.51737 6.31515C4.51737 7.66464 4.509 9.55959 4.49228 12Z"
+                                        fill="#2E80CE"
+                                    />
+                                </svg>
+                            </a>
+                        </div>
+
+                        <h3 class="footer__column-title">Subscribe</h3>
+                        <p class="footer__link footer__item">
+                            Subscribe our newsletter for the latest update of
+                            Dental care
+                        </p>
+                        <div class="footer__input-subscribe footer__item">
+                            <input
+                                class="footer__input"
+                                name="email"
+                                type="email"
+                                placeholder="Enter your email..."
+                            />
+                            <button class="footer__btn">Subscribe</button>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <p class="footer__copyright">
+                2021 GDN. Copyright and All rights reserved.
+            </p>
+        </footer>
     </body>
 </html>
