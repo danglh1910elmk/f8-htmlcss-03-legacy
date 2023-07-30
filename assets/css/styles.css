@@ -3,7 +3,7 @@
 }
 
 :root {
-    --primary-color: #2e80ce;
+    --main-color: #2e80ce;
 }
 
 html {
@@ -42,7 +42,7 @@ button {
     display: inline-block;
     height: 60px;
     border-radius: 30px;
-    background: var(--primary-color);
+    background: var(--main-color);
     color: #fff;
     text-align: center;
     font-size: 1.8rem;
@@ -85,8 +85,8 @@ button {
 }
 
 .control-buttons__circle:hover {
-    border-color: var(--primary-color);
-    background-color: var(--primary-color);
+    border-color: var(--main-color);
+    background-color: var(--main-color);
 }
 
 .control-buttons__circle:hover svg path {
@@ -164,8 +164,8 @@ button {
 
 /* !=============== Hero section =============== */
 .hero {
-    /* height: 800px; */
     background: #10375c;
+    min-height: 100vh;
 }
 
 .hero__container {
@@ -177,8 +177,7 @@ button {
 
 /* ====== text block ====== */
 .hero__text-block {
-    width: 517px;
-    height: 420px;
+    width: 44.2%;
 }
 
 .hero__title {
@@ -218,6 +217,9 @@ button {
 .hero__image-block {
     width: 45.6%;
     margin-left: auto;
+}
+
+.hero__image-wrapper {
     display: flex;
     align-items: center;
 }
@@ -261,7 +263,7 @@ button {
     text-align: center;
     font-size: 1.8rem;
     font-weight: 300;
-    line-height: 1.67; /* 166.667% */
+    line-height: 1.67;
 }
 
 /* ====== left part ====== */
@@ -297,7 +299,7 @@ button {
 }
 
 .services__item:hover .circle {
-    background-color: var(--primary-color);
+    background-color: var(--main-color);
     transition: 0.6s;
 }
 
@@ -357,23 +359,27 @@ button {
     color: #575f66;
     font-size: 1.8rem;
     font-weight: 300;
-    line-height: 1.67; /* 166.667% */
+    line-height: 1.67;
 }
 
 .how-it-works__list {
-    margin-top: 70px;
-    height: 418px;
+    margin-top: 86px;
     display: flex;
     align-items: flex-end;
 }
 
 .how-it-works__item {
-    height: 402px;
     width: calc((100% - 60px) / 3);
-    padding: 43px 42px 43px 42px;
-    border: 16px solid #eaf6ff;
+    padding: 16px;
     border-radius: 4px;
+    background-color: #eaf6ff;
+}
+
+/* tạo bo góc trong */
+.inner {
+    padding: 43px 42px 43px 42px;
     background-color: #fff;
+    border-radius: 4px;
 }
 
 .how-it-works__item + .how-it-works__item {
@@ -381,13 +387,13 @@ button {
 }
 
 .how-it-works__item:hover {
-    margin-bottom: 16px;
-    border-color: var(--primary-color);
+    background-color: var(--main-color);
+    transform: translateY(-16px);
     transition: 0.5s;
 }
 
 .how-it-works__item:hover .how-it-works__cta {
-    color: var(--primary-color);
+    color: var(--main-color);
     font-weight: 400;
 }
 
@@ -568,7 +574,7 @@ button {
     width: 100%; /* to compel with margin collapse */
     margin-top: 95px;
     border-radius: 4px;
-    background: var(--primary-color);
+    background: var(--main-color);
     padding: 76px 0;
     position: relative;
 }
@@ -657,6 +663,7 @@ button {
     flex-shrink: 0;
     width: calc((100% - 30px) / 2);
     border-radius: 12px;
+    border: 1px solid #e8ebee;
 }
 
 .blog__item + .blog__item {
@@ -664,11 +671,12 @@ button {
 }
 
 .blog__item:hover {
-    outline: 1px solid #e8ebee;
+    border: 1px solid transparent;
+    box-shadow: 0px 18px 50px 0px rgba(0, 0, 0, 0.05);
 }
 
 .blog__item:hover .blog__item-cta {
-    color: #10375c;
+    color: var(--main-color);
 }
 
 .blog__img {
@@ -678,9 +686,6 @@ button {
     height: 172px;
     object-fit: cover;
     border-radius: 12px 12px 0px 0px;
-
-    position: relative;
-    z-index: 1;
 }
 
 .blog__info {
@@ -705,7 +710,7 @@ button {
 .blog__item-cta {
     display: block;
     margin-top: 12px;
-    color: var(--primary-color);
+    color: #10375c;
     font-size: 1.4rem;
 }
 
@@ -737,7 +742,7 @@ button {
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    background: var(--primary-color);
+    background: var(--main-color);
 }
 
 .appointment__desc {
@@ -838,7 +843,7 @@ button {
 }
 
 .footer__circle:hover {
-    background-color: var(--primary-color);
+    background-color: var(--main-color);
     transition: 0.2s;
 }
 
@@ -874,7 +879,7 @@ button {
     width: 108px;
     height: 46px;
     border-radius: 4px;
-    background: var(--primary-color);
+    background: var(--main-color);
     color: #fff;
     font-family: "Open Sans";
     font-size: 1.4rem;
